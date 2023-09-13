@@ -93,8 +93,11 @@ let animationDetails = {};
 var collectableList = {
   database: { image: "images/collectables/database.png" },
   diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
+  grace: { image: src="images/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
+  max: { image: "images/collectables/helmet.png" },
   steve: { image: "images/collectables/steve-head.png" },
-};
+  coin: {image: "images/collectables/helmet-fotor-bg-remover-20230910132551.png"}
+}
+
+

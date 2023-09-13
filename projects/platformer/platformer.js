@@ -9,6 +9,7 @@ $(function () {
       halleImage = document.getElementById("player");
       projectileImage = document.getElementById("projectile");
       cannonImage = document.getElementById("cannon");
+      collectableImage = document.getElementById("grace");
       $(document).on("keydown", handleKeyDown);
       $(document).on("keyup", handleKeyUp);
       firstTimeSetup = false;
@@ -43,27 +44,42 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-createPlatform(-10,618,0,2000);
-createPlatform(150,6180,0,270);
+createPlatform(0,600,250,2000);
+createPlatform(700,480,400,20);
+createPlatform(1100,610,400,20);
+createPlatform(570,400,100,20);
+createPlatform(425,325,100,20);
+createPlatform(125,250,275,20);
+createPlatform(1050,250,400,20);
+createPlatform(780,340,150,20);
+createPlatform(200,650,325,200);
+createPlatform(375,700,400,200);
+createPlatform(900,700,500,200)
 
 
-    
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-
-
-
+   createCollectable("coin",200,200,0,1000);
+   createCollectable("coin",1200,200,0,1000)
+   createCollectable("coin",1100,200,0,1000)
+   createCollectable("coin",1300,200,0,1000)
+   createCollectable("coin",837,300,0,1000)
+   createCollectable("coin",1240,550,0,1000)
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-
+   createCannon("top",915,1200,50,50);
+   createCannon("right",500,1000,50,50);
+   createCannon("top",515,1200,50,50);
+   createCannon("right",800,0,100,60);
+   
 
 
     /////////////////////////////////////////////////
