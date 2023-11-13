@@ -9,7 +9,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: rgb(5, 38, 144);
+			background-color: rgb(126, 140, 188);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -98,6 +98,10 @@
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
+			function handleBoxClick() {
+   		positionX = positionX + 10;
+		moveBoxTo(positionX)
+	}
 			function handleBoxClick() {
 				points = points + 1;
 			if (speed > 0){
