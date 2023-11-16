@@ -375,8 +375,8 @@ function deathOfPlayer() {
   );
   ctx.font = "500% serif";
   ctx.fillText(
-    "Hit any key to respawn",
-    canvas.width / 4,
+    " Hit any key to respawn",
+    canvas.width / 5,
     canvas.height / 6 + canvas.height / 3,
     (canvas.width / 16) * 14
   );
